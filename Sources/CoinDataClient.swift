@@ -18,13 +18,15 @@ private let jsonDecoder: JSONDecoder = {
     return decoder
 }()
 
+    
+    
 private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd"
     return formatter
 }()
 
-
+    public init() {}
 public func fetchTop250Coins(currency: String) async throws -> [Coin] {
     let url = baseURL + "/coins/markets?vs_currency=\(currency)&order=market_cap_desc&per_page=250&page=1&sparkline=false&price_change_percentage=24h"
     let urlRequest = URLRequest(url: URL(string: url)!)
