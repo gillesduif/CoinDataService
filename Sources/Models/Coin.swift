@@ -49,6 +49,8 @@ import Foundation
    }
  
  */
+
+//first commit
 public struct Coin: Identifiable, Decodable {
     public let id, symbol, name: String
     public let image: String

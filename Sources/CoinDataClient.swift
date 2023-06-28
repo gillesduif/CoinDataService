@@ -4,7 +4,7 @@
 //
 //  Created by Gilles D'huyvetter on 28/06/2023.
 //
-
+//first commit
 import Foundation
 
 public struct CoinDataClient {
