@@ -34,6 +34,7 @@ public func fetchTop250Coins(currency: String) async throws -> [Coin] {
     guard let coinsTable = response.coins else {
         throw "Top Scorers not found"
     }
+    print(response)
     return coinsTable
 }
 
